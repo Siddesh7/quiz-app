@@ -1,0 +1,169 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  color: azure;
+}
+html,
+body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+}
+/*----------Landing Page-----------*/
+#particles-js {
+  vertical-align: middle;
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+form,
+h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h2 {
+  font-size: 70px;
+}
+li {
+  padding: 30px;
+  padding-left: 0px;
+  margin-left: 0;
+  color: #13e8e9;
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+ol li > input {
+  padding: 10px;
+  color: red;
+  font-size: 20px;
+}
+
+.container > h2 {
+  color: white;
+}
+/* pretty radio */
+label > input[type="radio"] {
+  display: none;
+}
+label > input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: rgb(251, 0, 0);
+}
+label > input[type="radio"]:checked + * {
+  color: rgb(0, 255, 64);
+}
+label > input[type="radio"]:checked + *::before {
+  background: radial-gradient(teal 0%, teal 40%, transparent 50%, transparent);
+  border-color: teal;
+}
+label > span {
+  font-size: 14px;
+  color: beige;
+  font-family: "Roboto", sans-serif;
+}
+
+#sub {
+  color: rgb(2, 63, 71);
+  margin: 40px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.bt {
+  text-align: center;
+}
+/* basic layout */
+
+label > input[type="radio"] + * {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+.stats {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+/*-----Particles JS-----styling------*/
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} /* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+.credits {
+  position: absolute;
+}
